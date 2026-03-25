@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDULLAH ডেইরি ও এগ্রো ফার্ম</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Hind Siliguri', sans-serif; }
+        body { background-color: #f9fbfd; color: #333; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: #2e7d32; color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        nav h2 { font-size: 24px; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+                background-size: cover; background-position: center; height: 400px; display: flex; flex-direction: column; 
+                justify-content: center; align-items: center; color: white; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 45px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; max-width: 600px; }
+
+        /* Info Section (Livestock & Products) */
+        .container { padding: 50px 5%; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; margin-bottom: 40px; color: #1b5e20; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; border-bottom: 4px solid #2e7d32; }
+        .card h3 { color: #2e7d32; margin-bottom: 10px; }
+        .card p { color: #666; font-size: 15px; }
+
+        /* Pricing/Products Table */
+        .table-container { margin-top: 50px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #2e7d32; color: white; }
+
+        /* Footer */
+        footer { background: #1b5e20; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        .btn { background: #ffc107; color: #333; padding: 10px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>আব্দুল্লাহ ডেইরি ফার্ম</h2>
+        <ul>
+            <li><a href="#">হোম</a></li>
+            <li><a href="#products">পণ্য</a></li>
+            <li><a href="#livestock">গবাদি পশু</a></li>
+            <li><a href="#contact">যোগাযোগ</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>খাঁটি দুধ ও উন্নত জাতের নিশ্চয়তা</h1>
+        <p>আমরা হলস্টাইন ফ্রিজিয়ান ও উন্নত জাতের গরুর বিশেষ যত্ন নিই। স্বাস্থ্যকর দানাদার খাবার এবং নিয়মিত টিকাদান আমাদের অগ্রাধিকার।</p>
+        <a href="#products" class="btn">পণ্য দেখুন</a>
+    </div>
+
+    <div class="container" id="livestock">
+        <h2 class="section-title">আমাদের খামারের বিশেষত্ব</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>উন্নত জাত (Pedigree)</h3>
+                <p>আমাদের কাছে উচ্চ উৎপাদনশীল হলস্টাইন ফ্রিজিয়ান (HF) এবং উন্নত শঙ্কর জাতের গরু রয়েছে।</p>
+            </div>
+            <div class="card">
+                <h3>সঠিক খাদ্যাভ্যাস</h3>
+                <p>দানাদার মিশ্র খাবার, ভুট্টার সাইলেজ এবং নেপিয়ার ঘাসের সমন্বয়ে বৈজ্ঞানিক পুষ্টি নিশ্চিত করি।</p>
+            </div>
+            <div class="card">
+                <h3>স্বাস্থ্য সচেতনতা</h3>
+                <p>নিয়মিত কৃমিনাশক, PPR ভ্যাকসিন এবং বিশেষজ্ঞ ডাক্তারের মাধ্যমে সার্বক্ষণিক তদারকি করা হয়।</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="products">
+        <h2 class="section-title">পণ্য ও মূল্য তালিকা</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>পণ্যের নাম</th>
+                        <th>পরিমাণ</th>
+                        <th>মূল্য (টাকা)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>খাঁটি তরল দুধ</td>
+                        <td> ১ লিটার</td>
+                        <td>৮০/-</td>
+                    </tr>
+                    <tr>
+                        <td>গাওয়া ঘি (Premium)</td>
+                        <td> ১ কেজি</td>
+                        <td> ১,২৫০/-</td>
+                    </tr>
+                    <tr>
+                        <td>দানাদার ফিড মিশ্রণ</td>
+                        <td>৫০ কেজি বস্তা</td>
+                        <td>২,২০০/-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h3>যোগাযোগ করুন</h3>
+        <p>ঠিকানা:কদমতলী,গাবতলী,বগুড়া,বাংলাদেশ</p>
+        <p>ফোন:+৮৮ ০১৭৪৯ ৯১০৩২৫ </p>
+        <p>&copy; ২০২৬  আব্দুল্লাহ ডেইরি ফার্ম | সর্বস্বত্ব সংরক্ষিত</p>
+    </footer>
+
+</body>
+</html>
